@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<title>EPL Updates</title>
+		<meta name="description" content="EPL Updates" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link
+			rel="preload"
+			href="css/materialize.min.css"
+			as="style"
+			onload="this.rel='stylesheet'"
+		/>
+		<link
+			rel="preload"
+			href="https://fonts.googleapis.com/icon?family=Material+Icons&display=swap"
+			as="style"
+			onload="this.rel='stylesheet'"
+		/>
+		<link
+			rel="preload"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css"
+			as="style"
+			onload="this.rel='stylesheet'"
+		/>
+		<link rel="stylesheet" href="css/styles.css" />
+		<link rel="stylesheet" href="css/arrow.css" />
+		<link rel="manifest" href="/manifest.json" />
+		<meta name="theme-color" content="#358222" />
+	</head>
+
+	<body>
+		<!-- Navigasi -->
+		<nav role="navigation">
+			<div class="nav-wrapper container">
+				<a href="#home" class="brand-logo center" id="logo">EPL Team</a>
+				<a href="./">
+					<i class="material-icons">arrow_back</i>
+				</a>
+			</div>
+		</nav>
+		<div class="preloader-wrapper big active" id="preloader">
+			<div class="spinner-layer spinner-blue-only">
+				<div class="circle-clipper left">
+					<div class="circle"></div>
+				</div>
+				<div class="gap-patch">
+					<div class="circle"></div>
+				</div>
+				<div class="circle-clipper right">
+					<div class="circle"></div>
+				</div>
+			</div>
+		</div>
+		<!-- Akhir Navigasi -->
+		<!-- Content starts here -->
+		<div class="fixed-action-btn">
+			<!-- show modal -->
+			<div id="popup" class="modal"></div>
+			<!-- floating save button -->
+			<a class="btn-floating btn-large red darken-4 modal-trigger" href="#popup" id="save">
+				<i class="large material-icons">favorite_border</i>
+			</a>
+			<!-- floating unfavorite button -->
+			<a class="btn-floating btn-large red darken-4 modal-trigger" href="#popup" id="delete">
+				<i class="large material-icons">favorite</i>
+			</a>
+		</div>
+		<div id="body-content">
+			<div id="team-detail"></div>
+			<div class="container" id="members"></div>
+		</div>
+		<script src="js/materialize.min.js"></script>
+		<script src="js/register_sw.js"></script>
+		<script src="js/teamDetailsApi.js"></script>
+		<script src="js/teamDetails.js"></script>
+		<script src="js/saved.js"></script>
+		<script src="js/idb.js"></script>
+		<script src="js/db.js"></script>
+		<script src="js/notification.js"></script>
+	</body>
+</html>

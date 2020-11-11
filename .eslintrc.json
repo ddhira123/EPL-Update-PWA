@@ -1,0 +1,32 @@
+{
+    "env": {
+        "browser": true,
+        "commonjs": true,
+        "es2021": true
+    },
+    "extends": [
+        "airbnb-base",
+        "prettier",
+        "eslint:recommended"
+    ],
+    "plugins": [
+        "prettier"
+    ],
+    "parserOptions": {
+        "ecmaVersion": 12
+    },
+    "rules": {
+        "eqeqeq": ["error", "allow-null"],
+        "linebreak-style": ["warn", "windows"],
+        "indent": ["warn", "tab"]
+    },
+    "overrides": [
+        {
+          "files": [ "service-worker.js" ],
+          "rules": {
+            "quotes": ["error", "single"]
+          }
+        }
+    ],
+    "ignorePatterns": ["idb.js", "materialize.js", "materialize.min.js"]
+}

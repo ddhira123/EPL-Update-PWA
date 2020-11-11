@@ -1,0 +1,31 @@
+{
+  "name": "epl-update",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.html",
+  "dependencies": {
+    "stylelint-config-prettier": "^8.0.2",
+    "web-push": "^3.4.4"
+  },
+  "devDependencies": {
+    "eslint": "^7.12.0",
+    "eslint-config-airbnb": "^17.1.0",
+    "eslint-config-airbnb-base": "^14.2.0",
+    "eslint-config-prettier": "^4.1.0",
+    "eslint-import-resolver-webpack": "0.11.1",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-jsx-a11y": "6.2.1",
+    "eslint-plugin-prettier": "^3.1.4",
+    "prettier": "2.1.2",
+    "prettier-eslint": "^11.0.0",
+    "prettier-eslint-cli": "^5.0.0"
+  },
+  "scripts": {
+    "fix-code": "prettier-eslint --write 'src/**/*.{js,jsx}' ",
+    "fix-styles": "prettier-stylelint --write 'src/**/*.{css,scss}' ",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "npx stylelint '**/*.css'"
+  },
+  "author": "Dhana",
+  "license": "ISC"
+}
