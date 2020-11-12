@@ -64,10 +64,10 @@ workbox.routing.registerRoute(
 	new workbox.strategies.StaleWhileRevalidate({
 		cacheName: 'api',
 		plugins: [
-			new workbox.cacheableResponse.Plugin({
+			new workbox.cacheableResponse.CacheableResponsePlugin({
 				statuses: [200],
 			}),
-			new workbox.expiration.Plugin({
+			new workbox.expiration.ExpirationPlugin({
 				maxAgeSeconds: 60 * 60 * 24 * 365,
 				maxEntries: 30,
 			}),
