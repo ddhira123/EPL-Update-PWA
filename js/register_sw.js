@@ -3,7 +3,7 @@
 
 function registerServiceWorker() {
 	return navigator.serviceWorker
-		.register("./service-worker.js")
+		.register("//sw.js", {scope: '/{repository}/'})
 		.then(function (registration) {
 			console.log("Registrasi Service Worker berhasil");
 			return registration;
