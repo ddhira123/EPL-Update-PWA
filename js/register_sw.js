@@ -3,7 +3,7 @@
 
 function registerServiceWorker() {
 	return navigator.serviceWorker
-		.register("//sw.js", {scope: '/{repository}/'})
+		.register("/EPL-Update-PWA/service-worker.js", {scope: "/EPL-Update-PWA/"})
 		.then(function (registration) {
 			console.log("Registrasi Service Worker berhasil");
 			return registration;
