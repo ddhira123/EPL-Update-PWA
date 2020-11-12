@@ -10,10 +10,10 @@ importScripts('https://storage.googleapis.com/workbox-cdn/releases/5.1.4/workbox
 if (workbox){
 	console.log('Workbox berhasil dimuat');
 	workbox.precaching.precacheAndRoute([
-		{ url: '/EPL-Update-PWA/EPL-Update-PWA/', revision: '1' },
-		{ url: '/EPL-Update-PWA/EPL-Update-PWA/nav.html', revision: '1' },
-		{ url: '/EPL-Update-PWA/EPL-Update-PWA/index.html', revision: '1' },
-		{ url: '/EPL-Update-PWA/EPL-Update-PWA/teamDetails.html', revision: '1' },
+		{ url: '/EPL-Update-PWA/', revision: '1' },
+		{ url: '/EPL-Update-PWA/nav.html', revision: '1' },
+		{ url: '/EPL-Update-PWA/index.html', revision: '1' },
+		{ url: '/EPL-Update-PWA/teamDetails.html', revision: '1' },
 		{ url: '/EPL-Update-PWA/pages/home.html', revision: '1' },
 		{ url: '/EPL-Update-PWA/pages/about.html', revision: '1' },
 		{ url: '/EPL-Update-PWA/pages/favorites.html', revision: '1' },
