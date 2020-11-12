@@ -4,8 +4,8 @@ function saveTeamNotification() {
 	const options = {
 		body:
 			"Congratulations, your team has been successfully added to favorites!",
-		icon: "/EPL-Update-PWA/img/icon/android-icon-192x192-dunplab-manifest-20202.png",
-		badge: "/EPL-Update-PWA/img/icon/logo-512x512.png",
+		icon: "/img/icon/android-icon-192x192-dunplab-manifest-20202.png",
+		badge: "/img/icon/logo-512x512.png",
 		tag: "message-group-1",
 		renotify: true,
 	};
@@ -23,8 +23,8 @@ function deleteTeamNotification() {
 	const options = {
 		body:
 			"Congratulations, your team has been successfully removed from favorites!",
-		icon: "/EPL-Update-PWA/img/icon/android-icon-192x192-dunplab-manifest-20202.png",
-		badge: "/EPL-Update-PWA/img/icon/logo-512x512.png",
+		icon: "/img/icon/android-icon-192x192-dunplab-manifest-20202.png",
+		badge: "/img/icon/logo-512x512.png",
 		tag: "message-group-1",
 		renotify: true,
 	};

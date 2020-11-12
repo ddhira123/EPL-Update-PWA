@@ -10,19 +10,19 @@
 	"orientation": "any",
 	"gcm_sender_id": "52589250839",
 	"icons": [
-        {
-			"src": "/EPL-Update-PWA/img/icon/logo-512x512.png",
+		{
+			"src": "/img/icon/logo-512x512.png",
 			"type": "image/png",
-            "sizes": "512x512",
-            "purpose": "any maskable"
+			"sizes": "512x512",
+			"purpose": "any maskable"
 		},
 		{
-			"src": "/EPL-Update-PWA/img/icon/android-icon-192x192-dunplab-manifest-20202.png",
+			"src": "/img/icon/android-icon-192x192-dunplab-manifest-20202.png",
 			"type": "image/png",
 			"sizes": "192x192"
 		},
 		{
-			"src": "/EPL-Update-PWA/img/icon/favicon-16x16-dunplab-manifest-20202.png",
+			"src": "/img/icon/favicon-16x16-dunplab-manifest-20202.png",
 			"type": "image/png",
 			"sizes": "16x16"
 		}
