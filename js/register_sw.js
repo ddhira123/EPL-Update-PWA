@@ -3,7 +3,7 @@
 
 function registerServiceWorker() {
 	return navigator.serviceWorker
-		.register("/service-worker.js")
+		.register("../service-worker.js")
 		.then(function (registration) {
 			console.log("Registrasi Service Worker berhasil");
 			return registration;
